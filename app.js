@@ -1,32 +1,30 @@
 'use strict'
 
-let today = new Date();
-let formatDate = today.toDateString();
-let selectElement = document.getElementById('date');
-selectElement.innerHTML = formatDate;
+
+
+
+var index = 0;
+slideshow();
+
+function slideshow() {
+  var i, x;
+  x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  index++;
+  if (index > x.length) {
+    index = 1;
+  }
+  x[index - 1].style.display = "block";
+  setTimeout(slideshow, 4000);
+  console.log('changed image')
+
+}
+
 
 console.log('Here\'s a hidden message');
 
 
 
 
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
