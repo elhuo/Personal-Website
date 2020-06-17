@@ -1,26 +1,20 @@
 'use strict'
 
 
+// Original JavaScript code by Chirp Internet: www.chirp.com.au
+  // Please acknowledge use of this code by including this header.
 
+  window.addEventListener("DOMContentLoaded", function(e) {
 
-var index = 0;
-slideshow();
+    var stage = document.getElementById("stage");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
 
-function slideshow() {
-  var i, x;
-  x = document.getElementsByClassName("slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  index++;
-  if (index > x.length) {
-    index = 1;
-  }
-  x[index - 1].style.display = "block";
-  setTimeout(slideshow, 4000);
-  console.log('changed image')
+  }, false);
 
-}
 
 
 console.log('Here\'s a hidden message');
