@@ -123,7 +123,7 @@
 }
 .resume .container-top .title{
     display: inline-block;
-    background-color:#FF9933 ;
+    background-color:#fcb83a ;
 }
 
 .resume .container-top .top{
@@ -147,7 +147,8 @@
     float:left;
 }
 .resume .right{
-    float:right;    
+    float:right; 
+    text-align: right;   
 }
 
 
@@ -155,7 +156,7 @@
     font-size: 26px;
     font-weight: 700;
     margin-left: 6%;
-    background-color:  #ffc78f;
+    background-color:  #ffdbb7;
     display: inline-block;
     text-align: left;
   }
@@ -182,7 +183,7 @@
     text-align: left;
   }
 
-  .resume .sections .left .a{
+  .resume .sections .left .a, .sections .a{
       margin-top: -30px;
   }
 
