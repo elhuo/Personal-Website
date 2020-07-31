@@ -5,7 +5,7 @@
 }
 
 .w{
-    width: 1400px;
+    width: 1500px;
     margin: auto;
     overflow:hidden;
 }
@@ -40,9 +40,10 @@ button {
   .title{
       float: left;
       padding-left: 5%;
-  }
-  .title p{
       line-height: 60px;
+  }
+  .title h1{
+      line-height: 50px;
       font-size: 40px;
       font-family:  Courier New, monospace;
   }
@@ -50,6 +51,7 @@ button {
   /*right side navbar*/
   .navbar{
       float:right;
+      margin-right: 100px;
   }
 .navbar ul li{
     float:left;
@@ -59,7 +61,7 @@ button {
     line-height: 60px;
       list-style: none;
       text-decoration: none;
-      font-family: "Raleway", sans-serif,Courier New, monospace;
+      font-family:  Arial, Courier New, monospace;
       color: black;
       font-size: 18px;
   }
@@ -73,7 +75,7 @@ button {
 .background{
     background-color:rgba(61, 61, 61, .6);
     height:620px;
-    width:1400px;
+    width:1500px;
     text-align: center;
 }
 
@@ -235,7 +237,7 @@ button {
 .footer{
     margin-top: 50px;
     height: 200px;
-    width: 1400px;
+    width: 1500px;
     background-color:rgba(61, 61, 61, .6);
     
 }
