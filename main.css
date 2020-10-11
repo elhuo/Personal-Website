@@ -1,13 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.w{
+body {
+    background-color: rgb(241, 241, 210);
+}
+
+.w {
     width: 1500px;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 em, i {
@@ -26,266 +30,236 @@ img {
 button {
     cursor: pointer
 }
-   /*--------------Header container------------- */
+
+/*--------------Header container------------- */
+
 .header {
     position: fixed;
-    z-index: 1000; 
-    height: 60px;
-    width:100%;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
     line-height: 60px;
     background-color: white;
-  }
-
-  /*left side word "Ellie Huo"*/
-  .title{
-      float: left;
-      padding-left: 5%;
-      line-height: 60px;
-  }
-  .title h1{
-      line-height: 50px;
-      font-size: 40px;
-      font-family:  Courier New, monospace;
-  }
-
-  /*right side navbar*/
-  .navbar{
-      float:right;
-      margin-right: 100px;
-  }
-.navbar ul li{
-    float:left;
-    padding: 0px 15px 15px 15px;
 }
-  .navbar ul li a{
-    line-height: 60px;
-      list-style: none;
-      text-decoration: none;
-      font-family:  Arial, Courier New, monospace;
-      color: black;
-      font-size: 18px;
-  }
 
-  .navbar ul li a:hover{
-    background-color: #FF9933 ;
-    color:white;
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+/*right side navbar*/
+
+.navbar ul li {
+    margin-left: 80px;
+    float: left;
+    padding: 0px 15px 15px 80px;
+    background-color: #fff;
+}
+
+.navbar ul li a {
+    line-height: 100px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Courier New, monospace;
+    color: black;
+    font-size: 25px;
+    background-color: #fff;
+}
+
+.navbar ul li a:hover {
+    color:  rgb(228, 104, 95);
 }
 
 /*------background image----*/
-.background{
-    background-color:rgba(61, 61, 61, .6);
-    height:620px;
-    width:1500px;
+
+.background {
+    height: 900px;
+    width: 1500px;
     text-align: center;
 }
 
-.background img{
-    height:620px;
+.background .filler {
+    height: 500px;
+}
+
+.background img {
+    margin-top: 130px;
+    border-radius: 2%;
+    width: 1250px;
+    height: auto;
     display: inline-block;
 }
 
 /*----About Me----*/
-.about{
-    padding-top: 3%;
 
-}
-
-.about .info {
-    height:550px;
-    margin: 2% 6%;
-    font-size: 18px;
-}
-.about .info h2{
-    display: inline-block;
+.about {
+    padding-top: 150px;
+    height: auto;
+    width: 1000px;
     text-align: center;
-    background-color: #cfff04;
+    font-family: Courier New, monospace;
 }
 
-.paragraph{
-    width: 850px;
-    float: right;
-    font-size:16px;
+.about h2 {
     text-align: center;
 }
-.details{
-    margin-top:80px;
-}
-.details, .details li{
-    width:340px;
-    height: 60px;
-    float: left;
-    list-style-type: none;
+
+.paragraph p {
+    font-size: 16px;
     text-align: left;
-
-}
-.about .info .details .box{
-    float: right;
-    padding-top: 70px;
-    width:340px;
-    height: 20px;
-    background-color:#fffb04;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 80px;
 }
 
+.timeline {
+    height: 400px;
+    height: 800px;
+}
+
+.hobbies {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hobbies .imghob {
+    display: inline-block;
+    width: 1100px;
+    height: auto;
+}
+
+.hobbies .hint {
+    display: inline-block;
+    height: 70px;
+    padding-left: 700px;
+}
 
 /*-------Resume Section---*/
-
-.resume .container-top{
+.resume{
+    padding-top:160px;
+}
+.resume .container-top {
     width: 1500px;
-    height: 200px;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 150px;
+}
+
+.container-top {
     text-align: center;
     margin: 0 auto;
 }
 
-.container-top{
-    margin-top: 6%;
-    margin-bottom: 6%;
-    text-align: center;
-    margin: 0 auto;
-}
-.resume .container-top .title{
+.resume .title {
     display: inline;
-    background-color:#fcb83a ;
+    background-color: #fcb83a;
     text-align: center;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
-.resume .container-top .top{
-    margin-top: 4%;
+.resume .imgRes {
+    width: 1000px;
+    height: auto;
+}
+
+.resume .hint {
+    display: inline-block;
+    height: 70px;
+    padding-left: 300px;
+}
+
+/* portfolio */
+
+.portfolio {
+    height: auto;
+    width: 1100px;
+}
+
+.portfolio h2 {
     text-align: center;
 }
 
-.resume .container-body{
-    width:1100px;
-    height:auto;
+.portfolio .button {
+    width: 1100px;
+    height: 300px;
+    text-align: center;
 }
 
-.resume .container-body .sections{
-   padding: 0 5%;
-   width: 1100px;
-   height:100px;
-   margin-top: 4%;
+.portfolio .button li {
+    float: left;
+    width: 280px;
+    margin: 42px;
+    overflow: hidden;
+    background-color: rgb(241, 241, 210);
 }
 
-.resume .left{
-    float:left;
-}
-.resume .right{
-    float:right; 
-    text-align: right;   
+.portfolio .bar-sec {
+    height: 800px;
+    width: 1100px;
 }
 
-
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-left: 6%;
-    background-color:  #ffdbb7;
-    display: inline-block;
-    text-align: left;
-  }
-
-  
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: left;
-    background-color: rgb(223, 223, 223);
-    display: inline-block;
-  }
-  
-  .resume .resume-item h5 {
-    font-size: 16px;
-    display: inline-block;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  .resume .resume-item li {
-    text-align: left;
-  }
-
-  .resume .sections .left .a, .sections .a{
-      margin-top: -30px;
-  }
-
-.portfolio{
-
-}
-.portfolio .youtube{
-    
+.portfolio .bar {
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 33px;
+    float: left;
+    background-color: #fff;
 }
 
+.portfolio .bar div {
+    padding: 100px;
+}
 
+.portfolio .bar-sec .bar {
+    font-family: Courier New, monospace;
+    padding: 50px;
+    font-size:18px;
+}
 
+.portfolio .art {
+    background-color: azure;
+    text-align: center;
+}
 
+.portfolio .cs {
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    color: rgb(179, 252, 169);
+}
 
+.portfolio .vlog {
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.portfolio .bar-sec .bar .list {
+    line-height: 50px;
+}
 
 /* footer */
-.footer{
+
+.footer {
+    list-style: none;
     margin-top: 50px;
-    height: 200px;
+    height: 500px;
     width: 1500px;
-    background-color:rgba(61, 61, 61, .6);
-    
-}
-.footer i {
-    color:black;
-    text-align: center !important;
-    width: 80px !important;
-    height:100px !important;
+    background-color: rgba(146, 146, 146);
+    color: white;
 }
 
-/*--------slideshow--------*/
-/* #stage {
-    padding-top: 70px;
-    width: 100%;
-    height: 1000px;
-  }
-  
-  #stage a {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  #stage a img {
-  
-    background: #fff;
-  }
-  
-  #stage a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 5s;
-    animation-duration: 2.5s;
-    z-index: 20;
-  }
-  #stage a:nth-of-type(2) {
-    z-index: 10;
-  }
-  #stage a:nth-of-type(n+3) {
-    display: none;
-  }
-  
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.0; }
-  } */
+.footer i, a {
+    text-align: center !important;
+    width: 150px !important;
+    height: 100px !important;
+    background-color: rgba(146, 146, 146);
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.footer p {
+    padding-top: 200px;
+    background-color: rgba(146, 146, 146);
+    font-size: 15px;
+}
